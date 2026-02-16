@@ -1,0 +1,58 @@
+graph TD
+    A[🌐 User Lands on Website] --> B[Onboarding Screen]
+    
+    B --> Q1[❓ Q1: Who are you?<br/>Single Select]
+    Q1 --> P1[🚀 Startup Founder]
+    Q1 --> P2[🏢 Enterprise Leader]
+    Q1 --> P3[⚡ Developer / Engineer]
+    Q1 --> P4[💰 Investor / VC]
+    Q1 --> P5[🔬 Researcher / Academic]
+    Q1 --> P6[⚖️ Policy / Government]
+    
+    P1 & P2 & P3 & P4 & P5 & P6 --> Q2[❓ Q2: What interests you most?<br/>Multi Select]
+    Q2 --> I1[🖥️ AI Infrastructure & Compute]
+    Q2 --> I2[🧠 Foundation Models & LLMs]
+    Q2 --> I3[🛡️ AI Governance & Safety]
+    Q2 --> I4[💡 Startups & Innovation]
+    Q2 --> I5[🌍 Global Partnerships]
+    Q2 --> I6[🗣️ Voice & Multilingual AI]
+    Q2 --> I7[🏥 AI for Healthcare]
+    Q2 --> I8[🎬 Creative AI & Media]
+    
+    I1 & I2 & I3 & I4 & I5 & I6 & I7 & I8 --> Q3[❓ Q3: Which day are you visiting?<br/>Single Select or Skip]
+    Q3 --> D1[Feb 16 — Inauguration]
+    Q3 --> D2[Feb 17 — Thematic Sessions]
+    Q3 --> D3[Feb 18 — Hackathons]
+    Q3 --> D4[Feb 19 — High-Level Summit]
+    Q3 --> D5[Feb 20 — Declaration & Closing]
+    Q3 --> DS[Skip — Show Everything]
+    
+    D1 & D2 & D3 & D4 & D5 & DS --> SESSION[💾 Save Preferences to Session]
+    
+    SESSION --> DASH[📊 Personalized Dashboard]
+    
+    DASH --> TAB1[◉ Overview<br/>Stats · Keynotes · Sutras · Takeaways]
+    DASH --> TAB2[📅 Schedule<br/>Day-by-day · Highlighted by interests]
+    DASH --> TAB3[📍 Must-Visit Stalls<br/>Top 10 ranked by persona]
+    DASH --> TAB4[🏢 Companies<br/>Global + Indian · Filterable]
+    DASH --> TAB5[🧠 AI Models<br/>12 IndiaAI Foundation Models]
+    DASH --> TAB6[💰 Deals & Investments<br/>$68B+ total · Challenge Finalists]
+    DASH --> TAB7[🌍 Country Pavilions<br/>13 nations]
+    DASH --> TAB8[🗺️ Venue & Navigation<br/>Halls · Gates · Shuttles]
+    DASH --> TAB9[⚡ Survival Tips<br/>Advice + Interactive Checklist]
+    
+    TAB2 --> FILTER_S[Sessions tagged ✦ For You<br/>based on interest selections]
+    TAB3 --> FILTER_M[Stall list changes entirely<br/>based on persona selection]
+    TAB4 --> FILTER_C[Companies highlighted<br/>based on interest match]
+    TAB5 --> FILTER_FM[Models sorted<br/>by interest relevance]
+    
+    DASH --> RESET[⚙️ Change Preferences<br/>→ Returns to Onboarding]
+    RESET --> B
+
+    style A fill:#0a0a0f,stroke:#FF9933,color:#fff
+    style B fill:#14141e,stroke:#FF9933,color:#fff
+    style DASH fill:#14141e,stroke:#138808,color:#fff
+    style SESSION fill:#1a1a24,stroke:#2EC4B6,color:#fff
+    style Q1 fill:#1a1a24,stroke:#FF6B35,color:#fff
+    style Q2 fill:#1a1a24,stroke:#E040FB,color:#fff
+    style Q3 fill:#1a1a24,stroke:#FFD166,color:#fff
