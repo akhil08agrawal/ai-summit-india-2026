@@ -1,5 +1,7 @@
 # India AI Impact Summit 2026
 
+> Created by **Akhil Agrawal** — [LinkedIn](https://www.linkedin.com/in/akhil08/) | [Website](https://akhil.theimperfectpm.com/) | [Twitter](https://x.com/AkhilAgrawal08) | [Email](mailto:akhil08.iitkgp@gmail.com)
+
 Research, analysis, and website creation files for the **India AI Impact Summit 2026** — the largest global AI summit ever held in the Global South.
 
 ## About the Summit
